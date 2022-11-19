@@ -20,8 +20,8 @@ Conditions
 * Write should not require any blocking
 * The large number of users will be divided into application pr. region, optionally multiple pr. region.
 * Active users and pr region will be kept in ram to optimize response time
-* Followers of active users will be kept in ram to optimize response time
-* Active users and Follows have 
+* Leaders of active users will be kept in ram to optimize response time
+* Active users and Leaders have 
   * Data lazy loaded on request
   * Unloads when not accessed for a specific time
   * Loads new data on read request if new data is available
